@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goowe -  Saia do ZERO, assuma sua torre de controle de dashboards.</title>
+    <meta name="description" content="Dashboard e relatórios gerenciais para lojas e redes. Visão 360º, tomada de decisão rápida, ranking de lojas, ticket médio e indicadores em tempo real.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="img/logo-cor.png" alt="goowe">
+                </div>
+                <nav class="nav-menu">
+                    <a href="#solucao" class="nav-link">Solução</a>
+                    <a href="#dashboard" class="nav-link">Dashboard</a>
+                    <a href="#recursos" class="nav-link">Recursos</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+                <button class="btn-primary" data-scroll="#contato">Solicitar Demo</button>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                       Saia do ZERO, assuma sua <span class="highlight">torre de controle</span> de dashboards. 
+                    </h1>
+                    <p class="hero-description">
+                        Visualize o que importa, aja com precisão e mantenha sua operação no rumo certo. 
+                        Dados em tempo real para decidir hoje o que impacta o resultado de amanhã.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" data-scroll="#dashboard">Ver Dashboard</button>
+                        <button class="btn-secondary" data-scroll="#contato">Fale com a goowe</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="control-tower">
+                        <div class="tower-screen">
+                            <div class="radar-circle circle-1"></div>
+                            <div class="radar-circle circle-2"></div>
+                            <div class="radar-circle circle-3"></div>
+                            <div class="radar-sweep"></div>
+                            <div class="radar-blips">
+                                <div class="blip blip-1"></div>
+                                <div class="blip blip-2"></div>
+                                <div class="blip blip-3"></div>
+                                <div class="blip blip-4"></div>
+                            </div>
+                        </div>
+                        <div class="tower-base">
+                            <img src="img/logo-branca.png" alt="Goowe" class="tower-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Section -->
+    <section class="kpi-section">
+        <div class="container">
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon green">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="kpi-content">
+                        <div class="kpi-value" data-counter="128">0</div>
+                        <div class="kpi-label">Lojas Monitoradas</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon blue">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        </svg>
+                    </div>
+                    <div class="kpi-content">
+                        <div class="kpi-value" data-counter="76471">0</div>
+                        <div class="kpi-label">Vendas Consolidadas</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon orange">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+                        </svg>
+                    </div>
+                    <div class="kpi-content">
+                        <div class="kpi-value" data-counter="35.89" data-decimals="2" data-prefix="R$">R$0</div>
+                        <div class="kpi-label">Ticket Médio</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dashboard Inteligente</h2>
+                <p>Visualize seus dados de forma clara e tome decisões rápidas</p>
+            </div>
+            
+            <div class="dashboard-grid">
+                <!-- KPI Cards -->
+                <div class="dashboard-card kpi-dashboard">
+                    <div class="card-header">
+                        <h3>Indicadores de Hoje</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="mini-kpi">
+                            <span class="mini-label">Total Vendido</span>
+                            <span class="mini-value" data-counter="7617.41" data-decimals="2" data-prefix="R$">R$0</span>
+                        </div>
+                        <div class="mini-kpi">
+                            <span class="mini-label">Quantidade</span>
+                            <span class="mini-value" data-counter="208">0</span>
+                        </div>
+                        <div class="mini-kpi">
+                            <span class="mini-label">Ticket Médio</span>
+                            <span class="mini-value" data-counter="35.89" data-decimals="2" data-prefix="R$">R$0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart Card -->
+                <div class="dashboard-card chart-dashboard">
+                    <div class="card-header">
+                        <h3>Top 10 Grupos Mais Vendidos</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="chart-container">
+                            <div class="chart-bars">
+                                <div class="bar" style="height: 85%; background: linear-gradient(180deg, #3b82f6, #1d4ed8);" data-value="R$ 3.200,00">
+                                    <span class="bar-label">DIVERSOS</span>
+                                </div>
+                                <div class="bar" style="height: 65%; background: linear-gradient(180deg, #f59e0b, #d97706);" data-value="R$ 2.100,00">
+                            <span class="bar-label">PRODUTOS</span>
+                                </div>
+                                <div class="bar" style="height: 55%; background: linear-gradient(180deg, #8b5cf6, #7c3aed);" data-value="R$ 1.800,00">
+                                    <span class="bar-label">MERCEARIA</span>
+                                </div>
+                                <div class="bar" style="height: 45%; background: linear-gradient(180deg, #22c55e, #16a34a);" data-value="R$ 1.400,00">
+                            <span class="bar-label">BEBIDAS</span>
+                                </div>
+                                <div class="bar" style="height: 35%; background: linear-gradient(180deg, #ef4444, #dc2626);" data-value="R$ 1.100,00">
+                            <span class="bar-label">FOODS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products List -->
+                <div class="dashboard-card products-dashboard">
+                    <div class="card-header">
+                        <h3>Top 10 Produtos Mais Vendidos</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-list">
+                            <div class="product-item gold">
+                                <div class="product-rank">🥇</div>
+                                <div class="product-info">
+                                    <div class="product-name">HAVAIANAS</div>
+                                    <div class="product-code">Código: 351</div>
+                                </div>
+                                <div class="product-quantity">Qt: 31</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">🥈</div>
+                                <div class="product-info">
+                                    <div class="product-name">ITEM OFERTA</div>
+                                    <div class="product-code">Código: 359</div>
+                                </div>
+                                <div class="product-quantity">Qt: 89</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">🥉</div>
+                                <div class="product-info">
+                                    <div class="product-name">PANO DE PRATO</div>
+                                    <div class="product-code">Código: 565</div>
+                                </div>
+                                <div class="product-quantity">Qt: 26</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Per-Store Products Card -->
+                <div class="dashboard-card per-store-dashboard">
+                    <div class="card-header">
+                        <h3>Top 10 Produtos por Loja</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="tabs">
+                            <button class="tab active" data-store="centro">Loja Centro</button>
+                            <button class="tab" data-store="norte">Loja Norte</button>
+                            <button class="tab" data-store="sul">Loja Sul</button>
+                        </div>
+                        <div class="store-list" id="store-centro">
+                            <div class="product-item">
+                                <div class="product-rank">1</div>
+                                <div class="product-info">
+                                    <div class="product-name">Café Premium 500g</div>
+                                    <div class="product-code">Código: 101</div>
+                                </div>
+                                <div class="product-quantity">Qt: 120</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">2</div>
+                                <div class="product-info">
+                                    <div class="product-name">Açúcar Cristal 1kg</div>
+                                    <div class="product-code">Código: 102</div>
+                                </div>
+                                <div class="product-quantity">Qt: 95</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">3</div>
+                                <div class="product-info">
+                                    <div class="product-name">Detergente Neutro</div>
+                                    <div class="product-code">Código: 103</div>
+                                </div>
+                                <div class="product-quantity">Qt: 80</div>
+                            </div>
+                        </div>
+                        <div class="store-list hidden" id="store-norte">
+                            <div class="product-item">
+                                <div class="product-rank">1</div>
+                                <div class="product-info">
+                                    <div class="product-name">Arroz Tipo 1 5kg</div>
+                                    <div class="product-code">Código: 201</div>
+                                </div>
+                                <div class="product-quantity">Qt: 110</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">2</div>
+                                <div class="product-info">
+                                    <div class="product-name">Feijão Carioca 1kg</div>
+                                    <div class="product-code">Código: 202</div>
+                                </div>
+                                <div class="product-quantity">Qt: 88</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">3</div>
+                                <div class="product-info">
+                                    <div class="product-name">Óleo de Soja 900ml</div>
+                                    <div class="product-code">Código: 203</div>
+                                </div>
+                                <div class="product-quantity">Qt: 76</div>
+                            </div>
+                        </div>
+                        <div class="store-list hidden" id="store-sul">
+                            <div class="product-item">
+                                <div class="product-rank">1</div>
+                                <div class="product-info">
+                                    <div class="product-name">Leite Integral 1L</div>
+                                    <div class="product-code">Código: 301</div>
+                                </div>
+                                <div class="product-quantity">Qt: 98</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">2</div>
+                                <div class="product-info">
+                                    <div class="product-name">Biscoito Recheado</div>
+                                    <div class="product-code">Código: 302</div>
+                                </div>
+                                <div class="product-quantity">Qt: 82</div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank">3</div>
+                                <div class="product-info">
+                                    <div class="product-name">Sabonete Neutro</div>
+                                    <div class="product-code">Código: 303</div>
+                                </div>
+                                <div class="product-quantity">Qt: 74</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solucao" class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gestão Clara para Decisões Certas</h2>
+                <p>O goowe organiza dados de todas as lojas em um único painel. Do total vendido ao ranking por dia, dos indicadores por grupo ao ticket médio, tudo pronto para ação.</p>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-icon green">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                        </svg>
+                    </div>
+                    <h3>Dashboard em Tempo Real</h3>
+                    <p>Visão 360º com KPIs críticos, evolução e alertas de desempenho.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon blue">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3>Relatórios Inteligentes</h3>
+                    <p>Filtros ágeis, rankings e cortes por loja, produto, grupo e período.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon orange">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Ação Orientada por Dados</h3>
+                    <p>Descubra onde agir para melhorar resultados e manter o que não pode falhar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="recursos" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recursos que Aceleram sua Operação</h2>
+                <p>Ferramentas pensadas para gestores que precisam de agilidade e precisão</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h4>Ranking de Lojas</h4>
+                    <p>Compare desempenho e identifique rapidamente quem precisa de atenção.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h4>Produto Mais Vendido</h4>
+                    <p>Veja líderes de venda e ajuste estoque e campanhas com precisão.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📈</div>
+                    <h4>Indicadores por Dia/Mês</h4>
+                    <p>Acompanhe a curva de vendas e antecipe movimentos sazonais.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Indicadores por Grupo/Produto</h4>
+                    <p>Entenda performance por categoria e otimize o mix.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏪</div>
+                    <h4>Indicadores por Loja</h4>
+                    <p>Detalhe por unidade para direcionar ações específicas.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h4>Filtros Avançados</h4>
+                    <p>Recortes rápidos por período, loja, grupo e metas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metaphor Section -->
+    <section class="metaphor-section">
+        <div class="container">
+            <div class="metaphor-content">
+                <div class="metaphor-text">
+                    <h2> <span class="highlight">Torre de Controle</span> goowe</h2>
+                    <p>Como uma torre de controle, o goowe varre a operação, identifica eventos e orienta a ação. Nada passa despercebido.</p>
+                    <div class="metaphor-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">👁️</span>
+                            <span>Visão única e integrada da rede</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">⚠️</span>
+                            <span>Alertas quando um indicador pede atenção</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🧭</span>
+                            <span>Rota clara para bater metas</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🛡️</span>
+                            <span>Segurança e alta disponibilidade</span>
+                        </div>
+                    </div>
+                    <div class="tagline">Veja. Entenda. Aja.</div>
+                </div>
+                <div class="metaphor-visual">
+                    <div class="radar-container">
+                        <div class="radar-screen">
+                            <div class="radar-circle circle-1"></div>
+                            <div class="radar-circle circle-2"></div>
+                            <div class="radar-circle circle-3"></div>
+                            <div class="radar-sweep"></div>
+                            <div class="radar-blips">
+                                <div class="blip blip-1"></div>
+                                <div class="blip blip-2"></div>
+                                <div class="blip blip-3"></div>
+                                <div class="blip blip-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para pilotar sua empresa com clareza?</h2>
+                <p>Agende uma demonstração e veja como sua gestão muda quando a informação trabalha a seu favor.</p>
+                <button class="btn-primary" data-scroll="#contato">Agendar Demonstração</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Fale com a goowe</h2>
+                    <p>Conte o cenário da sua operação e receba um diagnóstico sem custo.</p>
+                    <div class="contact-benefits">
+                        <div class="contact-benefit">
+                            <span class="benefit-icon">⚡</span>
+                            <span>Implantação rápida</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <span class="benefit-icon">🎓</span>
+                            <span>Suporte especializado</span>
+                        </div>
+                        <div class="contact-benefit">
+                            <span class="benefit-icon">📚</span>
+                            <span>Treinamento para gestores</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="img/logo-branca.png" alt="goowe">
+                    <p>• Dashboard e Relatórios Gerenciais</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#solucao">Solução</a>
+                    <a href="#dashboard">Dashboard</a>
+                    <a href="#recursos">Recursos</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; goowe. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
