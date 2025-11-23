@@ -121,7 +121,7 @@ body {
 .mobile-menu-toggle span {
     width: 24px;
     height: 2px;
-    background: var(--text-primary);
+    background: #3E6263;
     transition: var(--transition);
 }
 
